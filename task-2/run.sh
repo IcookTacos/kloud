@@ -11,4 +11,10 @@ scp /media/* node01:/web
 sleep 0.35
 
 echo "Provisioning resrouces"
-kubectl apply -f 
+kubectl apply -f pv.yaml
+sleep 0.15
+kubectl apply -f pvc.yaml
+sleep 0.15
+kubectl apply -f svc.yaml
+sleep 0.15
+kubectl apply -f pod.yaml
