@@ -5,6 +5,9 @@ metadata:
   namespace: development
 rules:
 - apiGroups: [""] 
+  resources: ["pods/log"]
+  verbs: ["*"]
+- apiGroups: [""] 
   resources: ["pods"]
   verbs: ["*"]
 - apiGroups: [""] 
