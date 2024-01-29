@@ -1,15 +1,15 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: development
   name: developer-role
+  namespace: development
 rules:
 - apiGroups: [""] 
   resources: ["pods"]
-  verbs: [""]
+  verbs: ["*"]
 - apiGroups: [""] 
   resources: ["services"]
-  verbs: [""]
+  verbs: ["*"]
 - apiGroups: [""] 
   resources: ["persistentvolumeclaims"]
-  verbs: [""]
+  verbs: ["*"]
