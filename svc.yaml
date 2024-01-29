@@ -5,7 +5,7 @@ metadata:
   namespace: development
 spec:
   selector:
-    app: jekyll
+    run: jekyll
   ports:
     - name: http
       protocol: TCP
