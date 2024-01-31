@@ -1,12 +1,12 @@
-echo "Creating namespace \"vote\""
+echo "Creating namespace \"vote\" 📁"
 kubectl create namespace vote
 sleep 0.25
 
-echo "Setting default namespace to \"vote\""
+echo "Setting default namespace to \"vote\" 📬"
 kubectl config set-context --current --namespace vote
 sleep 0.25
 
-echo "Provisioning resrouces:"
+echo "Provisioning resrouces 📝"
 kubectl apply -f vote-service.yaml
 sleep 0.25
 kubectl apply -f vote-deployment.yaml
@@ -21,3 +21,8 @@ kubectl apply -f db.yaml
 sleep 0.25
 kubectl apply -f worker-deployment.yaml
 sleep 0.25
+kubectl apply -f result-deployment.yaml
+sleep 0.25
+kubectl apply -f result-service.yaml
+sleep 0.25
+echo "Provisioning complete! ✅"
