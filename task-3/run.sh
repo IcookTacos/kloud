@@ -9,3 +9,5 @@ sleep 0.25
 echo "Provisioning resrouces:"
 kubectl apply -f vote-service.yaml
 sleep 0.25
+kubectl apply -f vote-deployment.yaml
+sleep 0.25

@@ -5,7 +5,7 @@ metadata:
   namespace: vote
 spec:
   selector:
-    app.kubernetes.io/name: vote-deployment
+    app: vote-deployment
   ports:
     - protocol: TCP
       port: 5000
