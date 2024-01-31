@@ -14,6 +14,4 @@ spec:
     spec:
       containers:
       - name: worker
-        image: kodekloud/examplevotingapp_worker
-        ports:
-        - containerPort: 80
+        image: dockersamples/examplevotingapp_worker
