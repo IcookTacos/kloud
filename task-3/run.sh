@@ -11,3 +11,13 @@ kubectl apply -f vote-service.yaml
 sleep 0.25
 kubectl apply -f vote-deployment.yaml
 sleep 0.25
+kubectl apply -f redis-deployment.yaml
+sleep 0.25
+kubectl apply -f redis-service.yaml
+sleep 0.25
+kubectl apply -f db-deployment.yaml
+sleep 0.25
+kubectl apply -f db.yaml
+sleep 0.25
+kubectl apply -f worker-deployment.yaml
+sleep 0.25
